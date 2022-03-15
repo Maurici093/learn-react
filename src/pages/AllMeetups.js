@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import MeetupList from '../components/meetups/MeetupList';
 
 const DUMMY_DATA = [
@@ -23,6 +25,9 @@ const DUMMY_DATA = [
 
 
 function AllMeetupsPage(){
+
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <section>
       <h1>All Meetups</h1>
